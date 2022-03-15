@@ -50,33 +50,21 @@ public class FoodAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(parent.getContext()).inflate(idLayout, parent, false);
         }
 
-        TextView titleText = (TextView) convertView.findViewById(R.id.title);
-        TextView rice= (TextView) convertView.findViewById(R.id.rice);
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.logo);
-        final LinearLayout linearLayout = (LinearLayout) convertView.findViewById(R.id.idLinearLayout);
+        TextView titleText =  convertView.findViewById(R.id.title);
+        TextView rice=  convertView.findViewById(R.id.rice);
+        ImageView imageView =  convertView.findViewById(R.id.logo);
+
+
+        final LinearLayout linearLayout = (LinearLayout) convertView.findViewById(R.id.layoutItem);
         final Food language = listFood.get(position);
 
         if (listFood!= null && !listFood.isEmpty()) {
             titleText.setText(language.getTitle());
             rice.setText(language.getRice());
-            int idLanguage = language.getId();
-            switch (idLanguage) {
-                case 1:
-                    imageView.setImageResource(R.drawable.donut_yellow_1);
-                    break;
-                case 2:
-                    imageView.setImageResource(R.drawable.tasty_donut_1);
-                    break;
-                case 3:
-                    imageView.setImageResource(R.drawable.green_donut_1);
-                    break;
-                case 4:
-                    imageView.setImageResource(R.drawable.donut_red_1);
-                    break;
-                default:
-                    break;
-            }
+            int idLanguage = language.getImg();
+
         }
+
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

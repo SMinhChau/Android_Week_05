@@ -1,17 +1,9 @@
 package com.example.android_week_05;
 
 public class Food {
-    private int id;
     private String title;
     private String rice;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private int img;
 
     public String getTitle() {
         return title;
@@ -29,9 +21,20 @@ public class Food {
         this.rice = rice;
     }
 
-    public Food(int id, String title, String rice) {
-        this.id = id;
+    public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
+    }
+
+    public Food() {
+    }
+
+    public Food(String title, String rice, int img) {
         this.title = title;
         this.rice = rice;
+        this.img = img;
     }
 }
