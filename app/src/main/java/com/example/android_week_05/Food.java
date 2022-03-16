@@ -1,6 +1,8 @@
 package com.example.android_week_05;
 
-public class Food {
+import java.io.Serializable;
+
+public class Food implements Serializable {
     private String title;
     private String rice;
     private int img;

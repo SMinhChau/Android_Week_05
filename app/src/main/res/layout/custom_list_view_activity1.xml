@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextName"
         android:layout_width="207dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
@@ -51,11 +51,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btnPink"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnPink"
         android:layout_width="104dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
@@ -63,24 +63,24 @@
         android:text="Pink Donut"
         android:textAllCaps="false"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDount"
+        app:layout_constraintStart_toEndOf="@+id/btnDount"
+        app:layout_constraintTop_toTopOf="@+id/btnDount"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnDount"
         android:layout_width="104dp"
         android:layout_height="36dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/border_button_donut"
         android:text="Donut"
         android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnFloat"
         android:layout_width="108dp"
         android:layout_height="37dp"
         android:layout_marginStart="36dp"
@@ -88,9 +88,9 @@
         android:text="Floating"
         android:textAllCaps="false"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPink"
+        app:layout_constraintStart_toEndOf="@+id/btnPink"
+        app:layout_constraintTop_toTopOf="@+id/btnPink"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
